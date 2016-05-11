@@ -12,8 +12,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="content" class="container">
+    <header id="content-header">
+<%
+=begin      
+      <div id="price-container">
+        <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+      </div>
+=end
+%>        
+      <%= image_tag('e-commerce2.png', id: "content-head-img", alt: "E-Commerce") %>
+    </header>
+		<%= yield %>
+	</div>
 </body>
 </html>

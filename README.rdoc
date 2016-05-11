@@ -1,4 +1,1 @@
-Mati, si llegas a ver esto avisame porque tengo un error que no me deja subir al server.
-No puedo encontrarlo por ningun lado, pero tengo diferencias cuando lo miro local a cuando lo miro en la web.
-
-
+README FILE
