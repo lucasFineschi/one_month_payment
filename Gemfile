@@ -19,6 +19,10 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'figaro'
 #Adding letter opener for sending emails
 gem 'letter_opener', group: :development
+#Adding gem for activeAdmin
+gem 'activeadmin', github: 'gregbell/active_admin'
+#Adding Devise for user managment
+gem 'devise'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
