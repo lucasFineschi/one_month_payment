@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration
     	t.string :author
     	t.text :description
     	t.decimal :price
+    	t.string :download_url
     	t.string :sku
       t.timestamps null: false
     end
