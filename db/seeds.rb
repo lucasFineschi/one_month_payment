@@ -6,3 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+
+recicle_australia = Product.create(title: "E-Commerce", author: "Think Green", description: %{<p>Nuestras zapatillas son basura y estamos orgullosos.</p>
+            <br>
+
+            <p>Aca tendrias que poner todo lo que queres comentar de lo que vas a vender, el porque de comprar las zapatillas reciclada y todo lo que se te ocurra.
+            </p>
+            <p><strong>Que Vendemos</strong></p>
+            <ul class="no-indent">
+                <li>Compromiso con el medio ambiente.</li>
+                <li>Solucion al problema de la basura.</li>
+                <li>Concientizacion.</li>
+                <li>Algunas cosas mas.</li>
+            </ul>})
