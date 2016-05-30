@@ -9,7 +9,7 @@ AdminUser.create!(email: 'admin@example.com', password: 'password', password_con
 
 recicle_australia = Product.create(title: "E-Commerce",
  																	price: "99.99",
- 																	sku: "product1", 
+ 																	sku: "PROD1", 
  																	author: "Think Green", 
  																	description: %{<p>Nuestras zapatillas son basura y estamos orgullosos.</p> <br>
 											            <p>Aca tendrias que poner todo lo que queres comentar de lo que vas a vender, el porque de comprar las zapatillas reciclada y todo lo que se te ocurra.
