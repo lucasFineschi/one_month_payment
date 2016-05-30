@@ -2,21 +2,9 @@
         <article id="details-article" class="col-sm-8">
             <h1 id="article-title"><%= @product.title %> <span class="font-weight-light"></span></h1>
 
-            <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal">Think Green.</a></small></h3>
+            <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
 
-            <br>
-            <p>Nuestras zapatillas son basura y estamos orgullosos.</p>
-            <br>
-
-            <p>Aca tendrias que poner todo lo que queres comentar de lo que vas a vender, el porque de comprar las zapatillas reciclada y todo lo que se te ocurra.
-            </p>
-            <p><strong>Que Vendemos</strong></p>
-            <ul class="no-indent">
-                <li>Compromiso con el medio ambiente.</li>
-                <li>Solucion al problema de la basura.</li>
-                <li>Concientizacion.</li>
-                <li>Algunas cosas mas.</li>
-            </ul>
+           <%= @product.description %>
         </article>
         <aside id="details-aside" class="col-sm-4">
             <!-- <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-heart"></span>I want this!</a> -->
@@ -25,7 +13,7 @@
                 <script src="https://checkout.stripe.com/checkout.js"></script>
                 <%= hidden_field_tag 'stripeToken' %>
                 <%= hidden_field_tag 'stripeEmail' %>
-                <%= hidden_field_tag 'amount', 9999 %>  
+                <%= hidden_field_tag 'amount', @product.price %>  
                 <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</button>
                 
                 <script>
@@ -80,6 +68,18 @@ Made by <a href="http://onemonth.com" target="_blank"><img id="one-month-footer-
                 <p>Como es el asunto de las zapatillas y quien las fabrica <a href="http://www.xinca.com.ar" target="_blank">Xinca</a> </p>
                 <p>Why Think Green?
                   Let's talk about a minute of the importance of recycling and taking care about the envirnment.   
+                </p>
+                <p>Follow us on Twitter <a href="https://twitter.com/thinkgreen" target="_blank">@thinkgreen</a></p>
+            </div>
+            <div id="modal-right" class="pull-right">
+                <%= image_tag('e-commerce2.png', alt: "E-Commerce") %>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>e importance of recycling and taking care about the envirnment.   
                 </p>
                 <p>Follow us on Twitter <a href="https://twitter.com/thinkgreen" target="_blank">@thinkgreen</a></p>
             </div>
